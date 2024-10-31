@@ -32,6 +32,7 @@
               }
             ],
             "styles": [
+              "src/sky-background.css",
               "src/styles.scss"
             ],
             "scripts": [],

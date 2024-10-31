@@ -1,6 +1,8 @@
-<input placeholder="Enter number of people standing in a row" [(ngModel)]="noOfPeople" (change)="initKillingPeople()" type="number">
-<!-- <button (click)="initKillingPeople()">Start Killing</button> -->
-<ul>
-  <li *ngFor="let survivors of survivorsList; let index = index; trackBy: trackByFn" [class]="'class_'+index">
-      <label>Round {{index == survivorsList.length ? 'Starting' : survivorsList.length-index}} {{survivors.length == 1 ? 'Survivor' : 'Survivors '+(survivors.length)}}</label> <div><span *ngFor="let survivor of survivors">{{survivor.number || survivor}}</span></div></li>
-</ul>
+<div class="links">
+    <a routerLink="minimal" routerLinkActive="active">Minimal</a>
+    <a routerLink="ineractive" routerLinkActive="active">Interactive</a>
+    <a routerLink="webworker" routerLinkActive="active">Web Worker</a>    
+</div>
+
+<router-outlet></router-outlet>
+

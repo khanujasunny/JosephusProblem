@@ -1,40 +1,21 @@
-input{
-    border-radius: 5px;
-    font-size: 32px;
-    padding: 4px;
-    display: block;
-    width: 100%;
-    max-width: 800px;
+.links{
     text-align: center;
-    margin: 24px auto;
-}
-ul{
-    list-style-type: none;
-    font: 400 15px / 24px Roboto, "Helvetica Neue", sans-serif;
-    li{
-        label{
-            color: white;
-            background: #EA556C;
-            margin: 4px;
-            padding: 4px;
-            display: block;
-            text-align: center;
+    a{
+        padding: 0.5em 1em;
+        margin: 0.5em 1em;
+        transition: 0.7s;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.5rem;
+        &.active{
+            box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12);
+            background: rgba(255, 255, 255, .9);
+            color: #000;
         }
-        div{
-            overflow: hidden;
-            white-space:nowrap;
-            text-overflow:ellipsis;
-            width:100%;
-            display:inline-block;
-            span{
-                background: #8074AD;
-                display: inline-block;
-                padding: 4px 8px;
-                margin: 4px;
-                color: white;
-                border: 2px solid #2a6b97;
-            }
-        }
-        
     }
 }

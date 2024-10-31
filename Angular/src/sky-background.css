@@ -1,0 +1,109 @@
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+h1,
+h6 {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  text-align: center;
+  top: 45%;
+  right: 0;
+  left: 0;
+}
+
+
+
+html, body {
+  width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background-color: #23A6D5;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: auto;
+}
+
+@media (min-width:650px)  {
+  body{
+
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+
+.placeholder_image{
+  position: fixed;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  min-width: 300px;
+  width: 30%;
+  -webkit-animation: flickerAnimation 2s infinite;
+   -moz-animation: flickerAnimation 2s infinite;
+   -o-animation: flickerAnimation 2s infinite;
+    animation: flickerAnimation 2s infinite;
+}
+
