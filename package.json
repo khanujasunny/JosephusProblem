@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:JosephusProblem": "node dist/josephus-problem/server/server.mjs",
-    "deploy": "ng build --output-path docs --base-href /JosephusProblem/"
+    "deploy": "ng build --output-path docs --base-href /JosephusProblem/browser/"
   },
   "private": true,
   "dependencies": {
